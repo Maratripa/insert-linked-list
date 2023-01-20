@@ -4,7 +4,7 @@ use std::{
 };
 
 #[derive(Debug)]
-pub struct Node<T> {
+struct Node<T> {
     next: Option<Rc<RefCell<Node<T>>>>,
     prev: Option<Weak<RefCell<Node<T>>>>,
     pub value: T,
@@ -22,7 +22,7 @@ impl<T> Node<T> {
 #[derive(Debug)]
 pub struct LinkedList<T> {
     head: Option<Rc<RefCell<Node<T>>>>,
-    pub tail: Option<Rc<RefCell<Node<T>>>>,
+    tail: Option<Rc<RefCell<Node<T>>>>,
     pub len: usize,
 }
 
