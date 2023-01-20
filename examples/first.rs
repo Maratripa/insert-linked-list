@@ -1,4 +1,4 @@
-use linked_list::LinkedList;
+use insert_linked_list::LinkedList;
 
 fn main() {
     let mut ll: LinkedList<u8> = LinkedList::new();

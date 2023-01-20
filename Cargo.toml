@@ -1,5 +1,5 @@
 [package]
-name = "linked-list"
+name = "insert-linked-list"
 version = "0.1.0"
 authors = ["Martin Atria Paublo <maratripa@gmail.com>"]
 description = "Linked list with insertion"

@@ -36,7 +36,7 @@ impl<T> LinkedList<T> {
     ///
     /// # Examples
     /// ```
-    /// use linked_list::LinkedList;
+    /// use insert_linked_list::LinkedList;
     ///
     /// let linkedlist: LinkedList<i16> = LinkedList::new();
     /// ```
@@ -52,7 +52,7 @@ impl<T> LinkedList<T> {
     ///
     /// # Examples
     /// ```
-    /// use linked_list::LinkedList;
+    /// use insert_linked_list::LinkedList;
     ///
     /// let mut linkedlist: LinkedList<i16> = LinkedList::new();
     /// linkedlist.add(1);
@@ -91,7 +91,7 @@ impl<T> LinkedList<T> {
     /// 
     /// # Examples
     /// ```
-    /// use linked_list::LinkedList;
+    /// use insert_linked_list::LinkedList;
     /// 
     /// let mut linkedlist: LinkedList<i16> = LinkedList::new();
     /// linkedlist.append(1);
