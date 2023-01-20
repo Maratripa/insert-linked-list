@@ -137,10 +137,23 @@ impl<T> LinkedList<T> {
             panic!()
         }
 
+        if position == 0 {
+            let new_node = Node {
+                next: match &self.head {
+                    Some(node) => Some(Rc::clone(node)),
+                    None => None
+                },
+                prev: None,
+                value
+            };
+            self.head = Some(Rc::new(RefCell::new(new_node)));
+            return
+        }
+
         let mut counter = 0;
 
         for node in self.iter_nodes() {
-            if counter == position { unsafe {
+            if counter == position - 1 { unsafe {
                 let node_ref = Rc::clone(&node);
                 let new_node = Node {
                     next: match &(*node_ref.as_ptr()).next {
